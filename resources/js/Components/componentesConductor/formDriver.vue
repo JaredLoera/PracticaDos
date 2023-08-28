@@ -1,5 +1,4 @@
 <script>
-import { reactive } from 'vue';
 import { router } from '@inertiajs/vue3';
 export default {
     props: {
@@ -18,6 +17,11 @@ export default {
     methods: {
         closeModal() {
             this.$emit('closeModal');
+            this.driverForm.NombreInput = '';
+            this.driverForm.ApellidoInput = '';
+            this.driverForm.NumeroLicenciaInput = '';
+            this.driverForm.FechaInput = '';
+            this.errors = {};  
         },
         submit(){
           router.post('conductores/saveDriver', this.driverForm)
@@ -26,7 +30,7 @@ export default {
            this.driverForm.ApellidoInput = '';
            this.driverForm.NumeroLicenciaInput = '';
            this.driverForm.FechaInput = '';
-            this.closeModal();
+           this.closeModal();
           })
         }
     }

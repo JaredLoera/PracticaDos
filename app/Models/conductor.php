@@ -23,4 +23,8 @@ class conductor extends Model
     {
         return conductor::where('estado', '=', false)->count();
     }
+    public static function getDriversActive()
+    {
+        return conductor::where('estado', '=', true)->get();
+    }
 }

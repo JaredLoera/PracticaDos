@@ -40,7 +40,7 @@ export default {
             </div>
             <div class="p-2 bg-transparent border-t border-success">
                 <button @click="openModal" class="bg-blue-500 text-white px-4 py-2 rounded-lg">
-                    Abrir Modal
+                    Añadir conductor
                 </button>
             </div>
         </div>
@@ -62,12 +62,7 @@ export default {
                     </div>
                     <!-- Modal Footer -->
                     <div class="modal-footer bg-gray-100 py-4 px-6 flex justify-end">
-                        <button @click="closeModal" class="mr-2 px-4 py-2 bg-gray-500 text-white rounded-lg">
-                            Cerrar
-                        </button>
-                        <button @click="saveData" class="px-4 py-2 bg-blue-500 text-white rounded-lg">
-                            Guardar
-                        </button>
+                      
                     </div>
                 </div>
             </div>

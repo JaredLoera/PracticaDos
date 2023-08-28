@@ -15,6 +15,7 @@ use App\Http\Controllers\conductoresController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/', [conductoresController::class, 'index']);
 Route::prefix('conductores')->group(function (){
 Route::get('/', [conductoresController::class, 'index']);
 Route::post('/saveDriver', [conductoresController::class, 'saveDriver']);
