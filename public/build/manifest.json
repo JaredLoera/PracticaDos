@@ -1,0 +1,32 @@
+{
+  "resources/js/Pages/Conductores/conductores.css": {
+    "file": "assets/conductores-d44aab97.css",
+    "src": "resources/js/Pages/Conductores/conductores.css"
+  },
+  "resources/js/Pages/Conductores/conductores.vue": {
+    "css": [
+      "assets/conductores-d44aab97.css"
+    ],
+    "file": "assets/conductores-e21f2292.js",
+    "imports": [
+      "resources/js/app.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "resources/js/Pages/Conductores/conductores.vue"
+  },
+  "resources/js/app.css": {
+    "file": "assets/app-cfa0f2db.css",
+    "src": "resources/js/app.css"
+  },
+  "resources/js/app.js": {
+    "css": [
+      "assets/app-cfa0f2db.css"
+    ],
+    "dynamicImports": [
+      "resources/js/Pages/Conductores/conductores.vue"
+    ],
+    "file": "assets/app-7ec5b1a0.js",
+    "isEntry": true,
+    "src": "resources/js/app.js"
+  }
+}
