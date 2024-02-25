@@ -30,14 +30,15 @@ class conductoresController extends Controller
             [
                 'NombreInput' => 'required|max:255',
                 'ApellidoInput' => 'required',
-                'NumeroLicenciaInput' => 'required',
+                'NumeroLicenciaInput' => 'required|unique:conductores,numeroLicencia',
                 'FechaInput' => 'required'
             ],
             [
                 'NombreInput.required' => 'El nombre es requerido',
                 'ApellidoInput.required' => 'El apellido es requerido',
                 'NumeroLicenciaInput.required' => 'El numero de licencia es requerido',
-                'FechaInput.required' => 'La fecha de nacimiento es requerida'
+                'FechaInput.required' => 'La fecha de nacimiento es requerida',
+                'NumeroLicenciaInput.unique' => 'El numero de licencia ya existe'
             ]
         );
         if ($validator->fails()) {
